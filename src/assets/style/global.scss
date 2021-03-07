@@ -1,10 +1,19 @@
 @import "./variables.scss";
+.about,
+.contact,
+.home {
+	padding: 10px;
+}
 
 #app {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: left;
 	color: #333;
+}
+
+#blockColorblindContent {
+	display: none;
 }
 
 body,
@@ -16,10 +25,6 @@ html {
 	width: 100vw;
 }
 
-.contact {
-	padding: 10px;
-}
-
 h1,
 h2,
 h3,
@@ -29,8 +34,9 @@ h6 {
 	font-family: $font-heading;
 }
 
-.home {
-	padding: 10px;
+.more {
+	display: block;
+	text-align: right;
 }
 
 #nav {
@@ -72,6 +78,14 @@ h6 {
 p {
 	font-family: $font-text;
 	font-size: $font-size-text;
+	max-width: 40em;
+}
+
+ul {
+	list-style-type: square;
+	font-family: $font-text;
+	font-size: $font-size-text;
+	max-width: 40em;
 }
 
 @media (min-width: 768px) {
